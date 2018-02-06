@@ -22,3 +22,8 @@
     state=latest
 
 - include: tendrl-node-agent.yml
+
+ - name: Reload rsyslog service
+  service:
+    name=rsyslog
+    state=reloaded

@@ -38,3 +38,8 @@
   service:
     name=httpd
     state=started
+
+ - name: Reload rsyslog service
+  service:
+    name=rsyslog
+    state=reloaded
